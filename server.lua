@@ -72,7 +72,7 @@ RegisterCommand('jail', function(src, args, raw)
     Timers[id] = time
 
     TriggerClientEvent('RAMPAGE_Jail:Jail', id, Config.Cells[math.random(#Config.Cells, 1)], time);
-    TriggerClientEvent('RAMAPGE_Jail:Notification', "Jail System", GetPlayerName(id) .. " has been jailed!", "success");
+    TriggerClientEvent('RAMAPGE_Jail:Notification', src, "Jail System", GetPlayerName(id) .. " has been jailed!", "success");
 end)
 
 RegisterCommand('release', function(src, args, raw)
